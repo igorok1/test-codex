@@ -9,3 +9,12 @@ def check_parity(n: int) -> str:
     """
     return "Парне" if n % 2 == 0 else "Непарне"
 
+
+if __name__ == "__main__":
+    try:
+        number = int(input("Введіть число: "))
+    except ValueError:
+        print("Помилка: введено не число")
+    else:
+        print(check_parity(number))
+
